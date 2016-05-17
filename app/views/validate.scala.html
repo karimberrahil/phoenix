@@ -1,0 +1,19 @@
+@(donForm: Form[Don], id_prj: Long)
+
+@import helper._
+
+@main("EPVN") {
+
+<h3>Confirmation de mon Don</h3>
+
+ 
+@form(routes.Application.validate()) {
+<input type="hidden" name="project_id" value='@id_prj' >
+@inputText(donForm("montant"), '_label -> "Montant de mon don (en euros)", '_showConstraints -> false)
+@textarea(field = donForm("description"), args = 'rows -> 10, 'cols -> 20)
+@checkbox(donForm("accept"), '_label -> None, '_text -> "Je m'engage a ne pas modifier les informations saisies sur le site de paiement",'_showConstraints -> false)	  
+
+<input type="submit" class="btn btn-primary" value="Confirmer mon don">
+}
+
+}

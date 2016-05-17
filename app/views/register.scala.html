@@ -1,0 +1,27 @@
+@(userForm: Form[User])
+
+@import helper._
+
+@main("EPVN") {
+
+	<h1>Inscription</h1>
+	
+	@form(routes.Application.newUser()) {
+		@inputText(userForm("adresseMail"), '_label -> "Email", '_showConstraints -> false)
+	  	@inputPassword(userForm("motDePasse"), '_label -> "Mot de passe", '_showConstraints -> false)
+		@inputText(userForm("nom"), '_label -> "Nom", '_showConstraints -> false)
+	  	@inputText(userForm("prenom"), '_label -> "Prenom", '_showConstraints -> false)
+	  	@inputDate(userForm("dateDeNaissance"), '_label -> "Date de naissance", '_showConstraints -> false)
+	  	@inputText(userForm("adresseMaison"), '_label -> "Adresse domicile", '_showConstraints -> false)
+	  	@inputText(userForm("codePostal"), '_label -> "Code postal", '_showConstraints -> false)
+	  	@inputText(userForm("ville"), '_label -> "Ville", '_showConstraints -> false)
+	  	@inputRadioGroup(
+          userForm("sexe"),
+          options = Seq("M"->"Homme","F"->"Femme"),
+          '_label -> "Sexe",
+          '_error -> userForm("sexe").error.map(_.withMessage("selectionner le sexe")))
+	  	<input type="submit" class="btn btn-primary" value="S'inscrire">
+	}
+		<a href="@routes.Application.index()">Accueil</a>
+	
+}

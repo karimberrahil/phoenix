@@ -1,0 +1,22 @@
+@(projectForm: Form[Project])
+
+@import helper._
+
+@main("EPVN") {
+
+	<h1>Ajout d'un Projet</h1>
+	
+	@form(routes.Projects.addProject()) {
+	    @inputText(projectForm("title"), '_label -> "Nom du projet", '_showConstraints -> false)
+	    <h1>Description du projet</h1> 
+		@textarea(field = projectForm(""), args = 'rows -> 10, 'cols -> 20)
+		<h1>Nom de la partie du projet</h1> 
+		@inputText(projectForm("title"), '_label -> "Nom du projet", '_showConstraints -> false)
+		<h1>Montant(en euros)</h1> 
+		@inputText(projectForm("total_amount"), '_label -> "Montant projet", '_showConstraints -> false)
+	    <input type="submit" class="btn btn-primary" value="Soumettre le projet">
+	}
+	
+		<a href="@routes.Application.index()">Accueil</a>
+	
+}

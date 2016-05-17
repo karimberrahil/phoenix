@@ -1,0 +1,21 @@
+@(flash: String, loginForm: Form[Session.Login])
+
+@import helper._
+
+@main("EPVN") {
+
+	@if(flash!=null) {
+		<div class="alert alert-block alert-info">
+			@flash
+		</div>
+	}
+
+	<h1>Connexion</h1>
+
+	@form(routes.Session.authenticate()) {
+		@inputText(loginForm("adresseMail"), '_label -> "Email", '_showConstraints -> false)
+	  	@inputPassword(loginForm("motDePasse"), '_label -> "Mot de passe", '_showConstraints -> false)
+	  	<input type="submit" class="btn btn-primary" value="Connexion">
+	}
+
+}

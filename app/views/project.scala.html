@@ -1,0 +1,11 @@
+@(project: Project)
+
+@main("EPVN") {
+
+	<h1>@project.title</h1>
+	<ul>
+	@for(project <- Project.findSubProjects(project.id)){
+		<li>@project.title</li>
+	}	
+	</ul>
+}

@@ -1,0 +1,32 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /								controllers.Application.index()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file					controllers.Assets.at(path="/public", file)
+
+# Application          
+
+GET     /users							controllers.Application.index()
+
+GET		/register						controllers.Application.register()
+POST	/register						controllers.Application.newUser()
+
+GET		/login							controllers.Session.login()
+POST	/login							controllers.Session.authenticate()
+GET		/logout							controllers.Session.logout()
+
+GET     /validate/:id_prj				controllers.Application.confirmDon(id_prj:Long)
+POST     /validate						controllers.Application.validate()
+
+GET 	/projects						controllers.Projects.listAll()
+GET     /projects/$id<[0-9]+>			controllers.Projects.show(id:Long)	
+
+GET 	/events							controllers.Events.listAll()
+GET     /events/$id<[0-9]+>				controllers.Events.show(id:Long)	
+	
+GET		/ajoutProjet					controllers.Projects.newProject()
+POST	/ajoutProjet					controllers.Projects.addProject()
