@@ -1,0 +1,9 @@
+2016-05-17 22:56:33,193 - [INFO] - from play in pool-4-thread-5 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2016-05-17 22:57:03,140 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:mysql://ynsect.freeboxos.fr:3306/EPVNDB?characterEncoding=UTF-8
+
+2016-05-17 22:57:05,427 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+

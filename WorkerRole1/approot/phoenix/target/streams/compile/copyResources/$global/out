@@ -1,0 +1,7 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Karim\workspace\phoenix-venitianRed\WorkerRole1\approot\phoenix\conf\application.conf,C:\Users\Karim\workspace\phoenix-venitianRed\WorkerRole1\approot\phoenix\target\scala-2.10\classes\application.conf)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Karim\workspace\phoenix-venitianRed\WorkerRole1\approot\phoenix\conf\evolutions,C:\Users\Karim\workspace\phoenix-venitianRed\WorkerRole1\approot\phoenix\target\scala-2.10\classes\evolutions)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Karim\workspace\phoenix-venitianRed\WorkerRole1\approot\phoenix\conf\routes,C:\Users\Karim\workspace\phoenix-venitianRed\WorkerRole1\approot\phoenix\target\scala-2.10\classes\routes)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Karim\workspace\phoenix-venitianRed\WorkerRole1\approot\phoenix\conf\evolutions\default,C:\Users\Karim\workspace\phoenix-venitianRed\WorkerRole1\approot\phoenix\target\scala-2.10\classes\evolutions\default)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Karim\workspace\phoenix-venitianRed\WorkerRole1\approot\phoenix\conf\evolutions\default\1.sql,C:\Users\Karim\workspace\phoenix-venitianRed\WorkerRole1\approot\phoenix\target\scala-2.10\classes\evolutions\default\1.sql)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Karim\workspace\phoenix-venitianRed\WorkerRole1\approot\phoenix\conf\evolutions\default\EPVNDB.sql,C:\Users\Karim\workspace\phoenix-venitianRed\WorkerRole1\approot\phoenix\target\scala-2.10\classes\evolutions\default\EPVNDB.sql)[0m

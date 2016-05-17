@@ -1,0 +1,1 @@
+com.microsoft.tooling.msservices.helpers.azure.AzureCmdException: Error importing subscriptions from publish settings file
